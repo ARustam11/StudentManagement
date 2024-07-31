@@ -1,0 +1,25 @@
+﻿@model IEnumerable<StudentManagement.Models.Student>
+<h1>Students List</h1>
+<h2>Rustam Ainetdinov</h2>
+<h2>200540293</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.name</td>
+                <td>@student.age</td>
+                <td>@student.course</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
